@@ -1,0 +1,18 @@
+{
+    "Wstep":"Podstawowe operacje matematyczne",
+    "Pytania":
+    [
+        {
+            "Tresc":"2+3", "Odpowiedz":5, "Kara":8
+        },
+        {
+            "Tresc":"5-7+20", "Odpowiedz":18, "Kara":5
+        },
+        {
+            "Tresc":"7*5", "Odpowiedz":35, "Kara":4
+        },
+        {
+            "Tresc":"1-6", "Odpowiedz":-5, "Kara":7
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+
+    <h1>Quiz</h1>
+    <p id = "czas">0</p>
+    <button type="button" class="button" id="koniec">koniec</button>
+    <button type="button" class="button" id="anuluj">anuluj</button><br>
+    <button type="button" class="button" id="prev">poprzednie</button>
+    <button type="button" class="button" id="next">następne</button>
+
+    <p id = "wstep"></p>
+    <p id = "tresc"></p>
+
+    <label>Wpisz odpowiedź:</label><br>
+    <input type="number" id="odpowiedz"><br>
+    <button class="button" id="submit">Zatwierdź odpowiedź</button><br>
+
+    <p id = "kara">kara za złą odpowiedź: </p>
+    <p id = "numer">numer obecnego pytania: 1</p>
+    <p id = "ilosc">ilość pytań: </p>
+
+    <div id="scoreboard" hidden>
+        <table class="board">
+          <thead>
+            <tr class="dlheader">
+              <td class="dlheader">Nr</td>
+              <td class="dlheader">Poprawna odpowiedź</td>
+              <td class="dlheader">Kara (s)</td>
+              <td class="dlheader">Czas (s)</td>
+            </tr>
+          </thead>
+          <tbody id="stats">
+            
+          </tbody>
+        </table>
+    </div>
+
+    <p id="wynik"></p>
+    <button type="button" class="button ukryty" id="zapisz_wynik">Zapisz wynik</button>
+    <button type="button" class="button ukryty" id="zapisz_wynik_stat">Zapisz wynik ze statystykami</button>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
