@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista lotów</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <section>
+        <h1>Lista lotów</h1>
+        <img src="plik.jpg" alt="logo firmy">
+        <p id="pierwszy">Poniższa tabela zawiera listę lotów.</p>
+        <div id="lot">Ale super lot!</div>
+        <p id="drugi">Są to wszystkie loty do końca tego roku.</p>
+
+        <div>
+            <table class="tabela">
+                <tr>
+                    <th>nr lotu</th>
+                    <th>skąd</th>
+                    <th>dokąd</th>
+                    <th>data</th>
+                    <th>godzina</th>
+                </tr>
+                <tr class="odwolane">
+                    <td><a href="plik2.html">111111</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>10-11-2020</td>
+                    <td>12:00</td>
+                </tr>
+                <tr class="lekko_opoznione">
+                    <td><a href="plik2.html">222111</a></td>
+                    <td>Warszawa</td>
+                    <td>Berlin</td>
+                    <td>22-08-2020</td>
+                    <td>07:20</td>
+                </tr>
+                <tr class="mocno_opoznione">
+                    <td><a href="plik2.html">333444</a></td>
+                    <td>Warszawa</td>
+                    <td>Londyn</td>
+                    <td>07-04-2020</td>
+                    <td>16:30</td>
+                </tr>
+                <tr>
+                    <td><a href="plik2.html">555777</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>07-05-2020</td>
+                    <td>16:50</td>
+                </tr>
+            </table>
+        </div>
+
+        <p id="pierwszy">Opóźnione loty</p>
+
+        <div>
+            <table class="tabela">
+                <tr>
+                    <th>nr lotu</th>
+                    <th>skąd</th>
+                    <th>dokąd</th>
+                    <th>data</th>
+                    <th>godzina</th>
+                    <th>opóźnienie</th>
+                </tr>
+                <tr class="odwolane">
+                    <td><a href="plik2.html">111111</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>10-11-2020</td>
+                    <td>12:00</td>
+                    <td>-</td>
+                </tr>
+                <tr class="lekko_opoznione">
+                    <td><a href="plik2.html">222111</a></td>
+                    <td>Warszawa</td>
+                    <td>Berlin</td>
+                    <td>22-08-2020</td>
+                    <td>07:20</td>
+                    <td>10 min</td>
+                </tr>
+                <tr class="mocno_opoznione">
+                    <td><a href="plik2.html">333444</a></td>
+                    <td>Warszawa</td>
+                    <td>Londyn</td>
+                    <td>07-04-2020</td>
+                    <td>16:30</td>
+                    <td>3h</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <form>
+        <label for="skad">Skąd:</label><br>
+        <select id="skad">
+            <option value="Warszawa">Warszawa</option>
+            <option value="Paryż">Paryż</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Londyn">Londyn</option>
+        </select><br>
+
+        <label for="dokad">Dokąd:</label><br>
+        <select id="dokad">
+            <option value="Warszawa">Warszawa</option>
+            <option value="Paryż">Paryż</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Londyn">Londyn</option>
+        </select><br>
+
+        <label for="fname">Imię:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Nazwisko:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <button type="reset">reset</button><br>
+        <button type="submit">submit</button>
+    </form>
+
+    <nav>
+        <div class="navbar">
+            <a href="plik.html">Strona Główna</a>
+            <a href="#">Aktualności</a>
+        
+            <div class="dropdown">
+              <button class="dropbtn">Loty</button>
+
+              <div class="dropdown-content">
+                <a href="plik2.html">111111</a>
+                <a href="plik2.html">222111</a>
+                <a href="plik2.html">333444</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Super okazje</button>
+  
+                <div class="dropdown-content">
+                  <a href="plik2.html">222111</a>
+                  <a href="plik2.html">333444</a>
+                </div>
+            </div>
+
+            <a href="#">Kontakt</a>
+        </div>
+    </nav>
+
+    <footer>Patryk Skrzeczkowski</footer>
+
+</body>
+</html>
